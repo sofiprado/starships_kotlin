@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Starships</string>
+    <string name="starship_detail_name">Name</string>
+    <string name="starship_detail_model">Model</string>
+    <string name="starship_detail_crew">Crew:</string>
+    <string name="starship_detail_manufacturer">Manufacturer</string>
+    <string name="starship_detail_cost">Cost</string>
+    <string name="starship_detail_length">Length</string>
+    <string name="starship_name">Name:</string>
+    <string name="starship_model">Model:</string>
+    <string name="starship_cost">Cost:</string>
+    <string name="starship_manufacturer">Manufacturer:</string>
+    <string name="starship_length">Length:</string>
+    <string name="starship_crew">Crew:</string>
+</resources>
