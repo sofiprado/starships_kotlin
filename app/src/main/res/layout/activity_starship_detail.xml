@@ -9,129 +9,131 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:padding="@dimen/starship_detail_text_space">
+        android:padding="@dimen/margins_text_space">
 
         <TextView
             android:id="@+id/starship_name_label"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/starship_detail_text_space"
-            android:layout_marginTop="@dimen/starship_detail_text_space"
+            android:layout_marginStart="@dimen/margins_text_space"
+            android:layout_marginTop="@dimen/margins_text_space"
             android:text="@string/starship_name"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/starship_name_value"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:layout_constraintBaseline_toBaselineOf="@id/starship_name_label"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            android:ellipsize="end"/>
-
-        <TextView
             android:id="@+id/starship_model_label"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/starship_detail_text_space"
-            android:layout_marginTop="@dimen/starship_detail_text_space"
+            android:layout_marginStart="@dimen/margins_text_space"
+            android:layout_marginTop="@dimen/margins_text_space"
             android:text="@string/starship_model"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/starship_name_label" />
 
         <TextView
-            android:id="@+id/starship_model_value"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:layout_constraintBottom_toBottomOf="@+id/starship_model_label"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            android:singleLine="true"
-            android:ellipsize="marquee"/>
-
-        <TextView
             android:id="@+id/starship_cost_label"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/starship_detail_text_space"
-            android:layout_marginTop="@dimen/starship_detail_text_space"
+            android:layout_marginStart="@dimen/margins_text_space"
+            android:layout_marginTop="@dimen/margins_text_space"
             android:text="@string/starship_cost"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/starship_model_label" />
 
         <TextView
-            android:id="@+id/starship_cost_value"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:layout_constraintBottom_toBottomOf="@+id/starship_cost_label"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/starship_cost_label"
-            android:singleLine="true"
-            android:ellipsize="marquee"/>
-
-        <TextView
             android:id="@+id/starship_manufacturer_label"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/starship_detail_text_space"
-            android:layout_marginTop="@dimen/starship_detail_text_space"
+            android:layout_marginStart="@dimen/margins_text_space"
+            android:layout_marginTop="@dimen/margins_text_space"
             android:text="@string/starship_manufacturer"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/starship_cost_label" />
 
         <TextView
-            android:id="@+id/starship_manufacturer_value"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:layout_constraintBottom_toBottomOf="@+id/starship_manufacturer_label"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            android:singleLine="true"
-            android:ellipsize="marquee"/>
-
-        <TextView
             android:id="@+id/starship_length_label"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/starship_detail_text_space"
-            android:layout_marginTop="@dimen/starship_detail_text_space"
+            android:layout_marginStart="@dimen/margins_text_space"
+            android:layout_marginTop="@dimen/margins_text_space"
             android:text="@string/starship_length"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/starship_manufacturer_label" />
 
         <TextView
-            android:id="@+id/starship_length_value"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:layout_constraintBottom_toBottomOf="@+id/starship_length_label"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            android:singleLine="true"
-            android:ellipsize="marquee"/>
-
-        <TextView
             android:id="@+id/starship_crew_label"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/starship_detail_text_space"
-            android:layout_marginTop="@dimen/starship_detail_text_space"
+            android:layout_marginStart="@dimen/margins_text_space"
+            android:layout_marginTop="@dimen/margins_text_space"
             android:text="@string/starship_crew"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/starship_length_label" />
 
+
+        <TextView
+            android:id="@+id/starship_name_value"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/small_text_space"
+            android:text="Nave 1"
+            app:layout_constrainedWidth="false"
+            app:layout_constraintBaseline_toBaselineOf="@id/starship_name_label"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/starship_name_label" />
+
+        <TextView
+            android:id="@+id/starship_model_value"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/small_text_space"
+            android:text="Nave 2"
+            app:layout_constraintBottom_toBottomOf="@+id/starship_model_label"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/starship_model_label" />
+
+        <TextView
+            android:id="@+id/starship_cost_value"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/small_text_space"
+            android:text="Nave 3"
+            app:layout_constraintBottom_toBottomOf="@+id/starship_cost_label"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/starship_cost_label"
+            app:layout_constraintTop_toTopOf="@+id/starship_cost_label" />
+
+        <TextView
+            android:id="@+id/starship_manufacturer_value"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/small_text_space"
+            android:text="Nave 4"
+            app:layout_constraintBottom_toBottomOf="@+id/starship_manufacturer_label"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/starship_manufacturer_label" />
+
+        <TextView
+            android:id="@+id/starship_length_value"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/small_text_space"
+            android:text="Nave 5"
+            app:layout_constraintBottom_toBottomOf="@+id/starship_length_label"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/starship_length_label" />
+
         <TextView
             android:id="@+id/starship_crew_value"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/small_text_space"
+            android:text="Nave 6"
             app:layout_constraintBottom_toBottomOf="@+id/starship_crew_label"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            android:singleLine="true"
-            android:ellipsize="marquee" />
-
-
+            app:layout_constraintStart_toEndOf="@+id/starship_crew_label" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 
