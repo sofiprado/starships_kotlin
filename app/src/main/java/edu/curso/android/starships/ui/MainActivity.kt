@@ -16,7 +16,7 @@ import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
-class StarshipsActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity() {
 
 companion object {
     private const val BASE_URL = "https://swapi.co/api"
@@ -33,12 +33,14 @@ companion object {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_starships)
 
-        //Separar en private fun
-        starshipsRecyclerView = findViewById(R.id.starships_list)
 
+        setRecyclerView()
         getStarships()
     }
 
+        private fun setRecyclerView(){
+            starshipsRecyclerView = findViewById(R.id.starships_list)
+        }
 
     private fun getStarships() {
         retrofitClient.getStarships().enqueue(object : Callback<StarshipsResponse> {
@@ -52,7 +54,6 @@ companion object {
                     val starshipsList = response.body()?.result?.map { starshipResponse -> Starship(starshipResponse) }
                     //enviar starshipsList a método que conecte con Adapter
                     sendStarshipsToLayout(starshipsList)
-                    Log.d("response", "StarshipActivity $starshipsList")
                 } else
                     errorLog()
 
@@ -65,7 +66,7 @@ companion object {
     }
 
         private fun errorLog(){
-            Log.d("error", "error getStarships")
+            Log.d("error", "error en getStarships()")
         }
 
     private fun sendStarshipsToLayout(starshipsList: List<Starship>?){

@@ -4,15 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    tools:context=".ui.StarshipsActivity">
+    tools:context=".ui.MainActivity">
 
 
    <TextView
        android:id="@+id/starship_name"
+       style="@style/starships_list"
        android:layout_width="0dp"
        android:layout_height="wrap_content"
-       android:layout_marginStart="@dimen/margins_text_space"
+       android:layout_marginStart="@dimen/small_text_space"
        android:layout_marginTop="@dimen/margins_text_space"
+       android:textColor="@color/starship_list_value"
        app:layout_constraintBottom_toBottomOf="@+id/starship_name_label"
        app:layout_constraintEnd_toEndOf="parent"
        app:layout_constraintStart_toEndOf="@+id/starship_name_label"
@@ -20,10 +22,12 @@
 
    <TextView
        android:id="@+id/starship_model"
+       style="@style/starships_list"
        android:layout_width="0dp"
        android:layout_height="wrap_content"
-       android:layout_marginTop="@dimen/small_text_space"
        android:layout_marginStart="@dimen/small_text_space"
+       android:layout_marginTop="@dimen/small_text_space"
+       android:textColor="@color/starship_list_value"
        app:layout_constraintBottom_toBottomOf="parent"
        app:layout_constraintEnd_toEndOf="parent"
        app:layout_constraintStart_toEndOf="@+id/starship_model_label"
@@ -31,6 +35,7 @@
 
    <TextView
        android:id="@+id/starship_name_label"
+       style="@style/starships_list.labels"
        android:layout_width="wrap_content"
        android:layout_height="wrap_content"
        android:layout_marginStart="@dimen/margins_text_space"
@@ -41,6 +46,7 @@
 
    <TextView
        android:id="@+id/starship_model_label"
+       style="@style/starships_list.labels"
        android:layout_width="wrap_content"
        android:layout_height="wrap_content"
        android:layout_marginStart="@dimen/margins_text_space"

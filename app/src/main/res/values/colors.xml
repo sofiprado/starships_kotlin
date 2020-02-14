@@ -3,4 +3,6 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
+    <color name="starship_list_value">#000099</color>
+    <color name="starship_list_label">#9494b8</color>
 </resources>

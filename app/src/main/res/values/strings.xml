@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Starships</string>
+    <string name="app_name">STARSHIPS</string>
     <string name="starship_detail_name">Starship:</string>
     <string name="starship_detail_model">Model:</string>
     <string name="starship_detail_crew">Crew:</string>
