@@ -22,7 +22,6 @@ companion object {
     private const val BASE_URL = "https://swapi.co/api"
 }
 
-    //::
     private val retrofitClient: StarshipsApi =
         RetrofitApiClient(BASE_URL).createService(StarshipsApi::class.java)
 
@@ -52,7 +51,6 @@ companion object {
 
                 if (response.isSuccessful) {
                     val starshipsList = response.body()?.result?.map { starshipResponse -> Starship(starshipResponse) }
-                    //enviar starshipsList a método que conecte con Adapter
                     sendStarshipsToLayout(starshipsList)
                 } else
                     errorLog()

@@ -13,6 +13,7 @@
 
         <TextView
             android:id="@+id/starship_name_label"
+            style="@style/starships_list.labels"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/margins_text_space"
@@ -23,6 +24,7 @@
 
         <TextView
             android:id="@+id/starship_model_label"
+            style="@style/starships_list.labels"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/margins_text_space"
@@ -33,6 +35,7 @@
 
         <TextView
             android:id="@+id/starship_cost_label"
+            style="@style/starships_list.labels"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/margins_text_space"
@@ -43,6 +46,7 @@
 
         <TextView
             android:id="@+id/starship_manufacturer_label"
+            style="@style/starships_list.labels"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/margins_text_space"
@@ -53,6 +57,7 @@
 
         <TextView
             android:id="@+id/starship_length_label"
+            style="@style/starships_list.labels"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/margins_text_space"
@@ -63,6 +68,7 @@
 
         <TextView
             android:id="@+id/starship_crew_label"
+            style="@style/starships_list.labels"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/margins_text_space"
@@ -74,6 +80,7 @@
 
         <TextView
             android:id="@+id/starship_name_value"
+            style="@style/starships_list"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/small_text_space"
@@ -85,6 +92,7 @@
 
         <TextView
             android:id="@+id/starship_model_value"
+            style="@style/starships_list"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/small_text_space"
@@ -95,6 +103,7 @@
 
         <TextView
             android:id="@+id/starship_cost_value"
+            style="@style/starships_list"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/small_text_space"
@@ -105,6 +114,7 @@
 
         <TextView
             android:id="@+id/starship_manufacturer_value"
+            style="@style/starships_list"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/small_text_space"
@@ -116,6 +126,7 @@
 
         <TextView
             android:id="@+id/starship_length_value"
+            style="@style/starships_list"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/small_text_space"
@@ -126,6 +137,7 @@
 
         <TextView
             android:id="@+id/starship_crew_value"
+            style="@style/starships_list"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/small_text_space"
