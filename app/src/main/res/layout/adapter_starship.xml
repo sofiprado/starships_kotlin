@@ -15,9 +15,9 @@
        android:layout_marginStart="@dimen/small_text_space"
        android:layout_marginTop="@dimen/margins_text_space"
        android:textColor="@color/starship_list_value"
-       app:layout_constraintBottom_toBottomOf="@+id/starship_name_label"
+       app:layout_constraintBottom_toBottomOf="@id/starship_name_label"
        app:layout_constraintEnd_toEndOf="parent"
-       app:layout_constraintStart_toEndOf="@+id/starship_name_label"
+       app:layout_constraintStart_toEndOf="@id/starship_name_label"
        app:layout_constraintTop_toTopOf="parent" />
 
    <TextView
@@ -30,7 +30,7 @@
        android:textColor="@color/starship_list_value"
        app:layout_constraintBottom_toBottomOf="parent"
        app:layout_constraintEnd_toEndOf="parent"
-       app:layout_constraintStart_toEndOf="@+id/starship_model_label"
+       app:layout_constraintStart_toEndOf="@id/starship_model_label"
        app:layout_constraintTop_toBottomOf="@id/starship_name" />
 
    <TextView

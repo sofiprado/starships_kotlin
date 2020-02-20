@@ -36,7 +36,7 @@ class StarshipAdapter(val starships: List<Starship>) :
         holder.name.text = starship.name
         holder.model.text = starship.model
         holder.itemView.setOnClickListener{listener?.onItemClick(starship)}
-        Log.i("TAG", "${starship.name}")
+        Log.i("TAG", starship.name)
     }
 
     override fun getItemCount(): Int = starships.size
